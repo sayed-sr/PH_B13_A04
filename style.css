@@ -5,55 +5,77 @@
 }
 
 :root {
-    --bg-main: #F8F9FD;
-    --primary-blue: #3B82F6;
-    --success-green: #10B981;
-    --danger-red: #EF4444;
-    --border-color: #E2E8F0;
+--bg-main: #F8F9FD;
+--primary-blue: #3B82F6;
+--success-green: #10B981;
+--danger-red: #EF4444;
+--border-color: #E2E8F0;
 }
 
 body {
-    width: 100%;
+    width:100%;
     background-color: var(--bg-main);
 }
 
-.font { font-family: "Inter", sans-serif; }
-.hidden { display: none !important; }
+.font { 
+font-family: "Inter", sans-serif; 
+}
+
+.hidden { 
+display: none !important; 
+}
 
 /* ================= TRACKER SECTION ================= */
 
 #tracker .container {
     max-width: 1400px;
-    margin: 0 auto;
-    padding: 60px 150px;
+margin: 0 auto;
+padding: 60px 150px;
 }
 
 #tracker .text h3 {
-    font-size: 28px;
+    /* background-color: 1px solid yellow; */
+font-size: 28px;
     font-weight: 800;
     color: #1A0B2E;
     margin-bottom: 30px;
 }
 
-/* Stats Cards */
+/* =============================Stats Cards=========================== */
 #tracker .stat-ctn {
-    display: flex;
+
+ display: flex;
+     /* background-color: 1px solid yellow; */
+
     gap: 24px;
     margin-bottom: 50px;
 }
 
 #tracker .stat-ctn .card {
+
     background: white;
-    padding: 24px;
-    border-radius: 12px;
-    width: 100%;
+padding: 24px;
+    border-radius:12px;
+     width: 100%;
     border: 1px solid var(--border-color);
 }
 
-#tracker .stat-ctn .card p { color: #64748B; font-weight: 500; margin-bottom: 10px; }
-#tracker .stat-ctn .card h2 { font-size: 32px; font-weight: 700; }
-#tracker .stat-ctn .card .green { color: var(--success-green); }
-#tracker .stat-ctn .card .red { color: var(--danger-red); }
+
+#tracker .stat-ctn .card p {
+     color: #64748B;
+      font-weight: 500; 
+      margin-bottom: 10px; 
+    }
+#tracker .stat-ctn .card h2 {
+     font-size: 32px;
+        font-weight:700;
+     }
+#tracker .stat-ctn .card .green { 
+color: var(--success-green); 
+}
+#tracker .stat-ctn .card .red { 
+    color: var(--danger-red); 
+}
 
 /* Filter & Tabs */
 #tracker .filter-ctn {
