@@ -6,6 +6,7 @@
 
 :root {
 --bg-main: #F8F9FD;
+
 --primary-blue: #3B82F6;
 --success-green: #10B981;
 --danger-red: #EF4444;
@@ -14,6 +15,7 @@
 
 body {
     width:100%;
+    
     background-color: var(--bg-main);
 }
 
@@ -190,7 +192,9 @@ color: #1A0B2E;
 
 .job-item .action-ctn { 
     /* background-color: 1px solid yellow; */
+
     display: flex;
+
      gap: 10px;
 
 }
@@ -224,16 +228,30 @@ border: 1px solid var(--success-green);
 
 .del-icon { 
     cursor: pointer;
+
       opacity: 0.5;
  }
 
 /* ================= EMPTY STATE SECTION ================= */
 
-#empty-state .container { padding: 40px 150px; }
+#empty-state .container { 
+
+/* background-color: 1px solid yellow; */
+
+    padding: 40px 150px;
+ }
+
+
 #empty-state .no-job-card {
+
     background: white;
+
+/* background-color: 1px solid yellow; */
     padding: 80px;
-    border-radius: 16px;
-    text-align: center;
+
+   border-radius: 16px;
+
+ text-align: center;
+
     border: 1px solid var(--border-color);
 }
