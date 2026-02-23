@@ -1,13 +1,72 @@
-// Array containing exactly 8 initial job objects
 let jobs = [
-    { id: 1, company: "Mobile First Corp", role: "React Native Developer", info: "Remote • Full-time • $130k - $175k", status: "none" },
-    { id: 2, company: "WebFlow Agency", role: "Web Designer & Developer", info: "Los Angeles, CA • Part-time • $80k - $120k", status: "none" },
-    { id: 3, company: "DataViz Solutions", role: "Data Visualization Specialist", info: "Boston, MA • Full-time • $125k - $165k", status: "none" },
-    { id: 4, company: "CloudFirst Inc", role: "Backend Developer", info: "Seattle, WA • Full-time • $140k - $190k", status: "none" },
-    { id: 5, company: "Innovation Labs", role: "UI/UX Engineer", info: "Austin, TX • Full-time • $110k - $150k", status: "none" },
-    { id: 6, company: "MegaCorp Solutions", role: "JavaScript Developer", info: "New York, NY • Full-time • $130k - $170k", status: "none" },
-    { id: 7, company: "StartupXYZ", role: "Full Stack Engineer", info: "Remote • Full-time • $120k - $160k", status: "none" },
-    { id: 8, company: "TechCorp Industries", role: "Senior Frontend Developer", info: "San Francisco, CA • Full-time • $130k - $175k", status: "none" }
+    { 
+        id: 1, company: "Mobile First Corp", 
+        role: "React Native Developer",
+        info: "Remote • Full-time • $130k - $175k", 
+        status: "none" 
+    },
+
+    { 
+        id: 2,
+         company: "WebFlow Agency",
+         role: "Web Designer & Developer",
+         info: "Los Angeles, CA • Part-time • $80k - $120k", 
+         status: "none"
+
+     },
+
+    { 
+        id: 3,
+         company: "DataViz Solutions",
+         role: "Data Visualization Specialist",
+         info: "Boston, MA • Full-time • $125k - $165k",
+         status: "none"
+
+     },
+
+    { 
+        id: 4,
+         company: "CloudFirst Inc",
+         role: "Backend Developer",
+         info: "Seattle, WA • Full-time • $140k - $190k", 
+    status: "none"
+
+     },
+
+    { 
+        id: 5,
+         company: "Innovation Labs",
+         role: "UI/UX Engineer",
+         info: "Austin, TX • Full-time • $110k - $150k", 
+        status: "none"
+
+     },
+
+    { 
+        id: 6,
+         company: "MegaCorp Solutions",
+         role: "JavaScript Developer",
+         info: "New York, NY • Full-time • $130k - $170k",
+         status: "none" 
+
+    },
+
+    { 
+        id: 7,
+         company: "StartupXYZ",
+         role: "Full Stack Engineer", 
+        info: "Remote • Full-time • $120k - $160k",
+         status: "none" },
+
+    { 
+        id: 8, 
+        company: "TechCorp Industries", 
+        role: "Senior Frontend Developer",
+         info: "San Francisco, CA • Full-time • $130k - $175k", 
+        status: "none"
+
+     }
+
 ];
 
 let currentFilter = 'all';
