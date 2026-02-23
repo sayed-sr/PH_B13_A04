@@ -1,16 +1,20 @@
 let jobs = [
     { 
 id: 1, company: "Mobile First Corp", 
-role: "React Native Developer",
-info: "Remote • Full-time • $130k - $175k", 
-status: "none" 
+ role: "React Native Developer",
+ info: "Remote • Full-time • $130k - $175k", 
+desc: "Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.",
+ status: "none" 
     },
+
+
 
     { 
  id: 2,
  company: "WebFlow Agency",
     role: "Web Designer & Developer",
-    info: "Los Angeles, CA • Part-time • $80k - $120k", 
+info: "Los Angeles, CA • Part-time • $80k - $120k", 
+    desc: "Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.",
  status: "none"
 
      },
@@ -19,53 +23,76 @@ status: "none"
         id: 3,
 company: "DataViz Solutions",
  role: "Data Visualization Specialist",
- info: "Boston, MA • Full-time • $125k - $165k",
+       info: "Boston, MA • Full-time • $125k - $165k",
+desc: "Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.",
  status: "none"
 
-     },
+      },
+
+
+
 
     { 
 id: 4,
  company: "CloudFirst Inc",
  role: "Backend Developer",
     info: "Seattle, WA • Full-time • $140k - $190k", 
+desc: "Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.",
     status: "none"
 
-     },
+      },
+
 
     { 
+
         id: 5,
 company: "Innovation Labs",
          role: "UI/UX Engineer",
  info: "Austin, TX • Full-time • $110k - $150k", 
+     desc: "Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.",
 status: "none"
 
-     },
+      },
+
+
 
     { 
         id: 6,
  company: "MegaCorp Solutions",
- role: "JavaScript Developer",
- info: "New York, NY • Full-time • $130k - $170k",
+   role: "JavaScript Developer",
+  info: "New York, NY • Full-time • $130k - $170k",
+ desc: "Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.",
  status: "none" 
 
     },
+
+
+
+
+
+
 
     { 
 id: 7,
     company: "StartupXYZ",
     role: "Full Stack Engineer", 
         info: "Remote • Full-time • $120k - $160k",
-    status: "none" },
+       desc: "Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.",
+    status: "none"
+ },
+
+
+
 
     { 
  id: 8, 
  company: "TechCorp Industries", 
 role: "Senior Frontend Developer",
-  info: "San Francisco, CA • Full-time • $130k - $175k", 
+ info: "San Francisco, CA • Full-time • $130k - $175k", 
+desc: "We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.",
         status: "none"
 
-     }
+      }
 
 ];
 
@@ -125,6 +152,7 @@ return `
            <span class="del-icon" onclick="deleteJob(${job.id})">🗑</span>
     </div>
                     <div class="status-tag ${tagClass}">${tagTxt}</div>
+                    <p class="job-desc">${job.desc}</p>
                     <div class="action-ctn">
          <button class="btn-action btn-int" onclick="updateStatus(${job.id}, 'interview')">INTERVIEW</button>
         <button class="btn-action btn-rej" onclick="updateStatus(${job.id}, 'rejected')">REJECTED</button>
