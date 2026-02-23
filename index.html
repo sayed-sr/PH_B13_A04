@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 04</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font">
+
+    <section id="tracker" class="focus">
+        <div class="container">
+            
+            <div class="text">
+                <h3>Job Application Tracker</h3>
+            </div>
+
+            <div class="stat-ctn">
+                <div class="card">
+                    <p>Total</p>
+                    <h2 id="total-count">0</h2>
+                </div>
+                <div class="card">
+                    <p>Interview</p>
+                    <h2 class="green" id="interview-count">0</h2>
+                </div>
+                <div class="card">
+                    <p>Rejected</p>
+                    <h2 class="red" id="rejected-count">0</h2>
+                </div>
+            </div>
+
+            <div class="filter-ctn">
+                <div class="text">
+                    <h3>Available Jobs</h3>
+                </div>
+                <p class="count-label"><span id="display-count">0</span> jobs</p>
+            </div>
+
+            <div class="tab-ctn">
+                <button class="tab-btn active" data-filter="all">All</button>
+                <button class="tab-btn" data-filter="interview">Interview</button>
+                <button class="tab-btn" data-filter="rejected">Rejected</button>
+            </div>
+
+            <div id="job-wrapper" class="list-ctn">
+                </div>
+
+        </div>
+    </section>
+
+    <section id="empty-state" class="hidden">
+        <div class="container">
+            <div class="card-ctn">
+                <div class="no-job-card">
+                    <div class="img-box">
+                        <img src="jobs.png" alt="No jobs">
+                    </div>
+                    <div class="text">
+                        <h3>No jobs available</h3>
+                        <p>Check back soon for new job opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
