@@ -122,6 +122,8 @@ color: var(--success-green);
 
 /* ====================================Job Cards Styling =========================*/
 .job-item {
+        /* background-color: 1px solid yellow; */
+
     background: white;
     padding: 30px;
     border-radius: 16px;
@@ -130,31 +132,76 @@ color: var(--success-green);
     position: relative;
 }
 
-.job-item .header-box { display: flex; justify-content: space-between; }
-.job-item .header-box h4 { font-size: 20px; color: #1A0B2E; }
-.job-item .role-txt { color: #64748B; font-size: 15px; margin: 5px 0; }
-.job-item .info-row { font-size: 13px; color: #94A3B8; margin-bottom: 15px; }
+.job-item .header-box { 
+    display: flex; 
+    /* background-color: 1px solid yellow; */
+
+    justify-content: space-between;
+
+}
+.job-item .header-box h4 { 
+    font-size: 20px;
+        /* background-color: 1px solid yellow; */
+color: #1A0B2E; 
+    
+    }
+
+
+.job-item .role-txt { 
+    
+    color: #64748B;
+     font-size: 15px; 
+     
+    margin: 5px 0;
+ }
+
+
+.job-item .info-row { 
+
+  /* background-color: 1px solid yellow; */  
+    font-size: 13px;
+     color: #94A3B8; 
+     margin-bottom:15px;
+     }
 
 .job-item .status-tag {
     display: inline-block;
     padding: 4px 10px;
     border-radius: 4px;
+
     font-size: 11px;
+
     font-weight: 800;
     background: #F1F5F9;
     margin-bottom: 15px;
 }
 
-.job-item .status-tag.applied { background: #DCFCE7; color: #166534; }
-.job-item .status-tag.rejected { background: #FEE2E2; color: #991B1B; }
+.job-item .status-tag.applied { 
+    background: #DCFCE7; 
+    color: #166534; }
 
-.job-item .action-ctn { display: flex; gap: 10px; }
+
+
+.job-item .status-tag.rejected { 
+    background: #FEE2E2; 
+    /* background-color: 1px solid yellow; */
+    color: #991B1B; 
+}
+
+.job-item .action-ctn { 
+    /* background-color: 1px solid yellow; */
+    display: flex;
+     gap: 10px;
+
+}
 .job-item .btn-action {
     padding: 8px 18px;
+
     border-radius: 6px;
+    /* background-color: 1px solid yellow; */
     font-weight: 700;
     font-size: 12px;
-    cursor: pointer;
+    cursor:pointer;
     background: white;
 }
 
