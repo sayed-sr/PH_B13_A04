@@ -95,6 +95,7 @@ desc: "We are looking for an experienced Frontend Developer to build scalable we
       }
 
 ];
+// ============================================================================================
 
 let currentFilter = 'all';
 
@@ -113,12 +114,13 @@ function renderUI() {
     document.getElementById('interview-count').innerText = jobs.filter(j => j.status === 'interview').length;
 
 document.getElementById('rejected-count').innerText = jobs.filter(j => j.status === 'rejected').length;
-    document.getElementById('display-count').innerText = filtered.length;
+     document.getElementById('display-count').innerText = filtered.length;
 
 
   
     if (filtered.length === 0) {
         wrapper.innerHTML = "";
+
         emptySec.classList.remove('hidden'); 
 } 
     
@@ -127,19 +129,22 @@ document.getElementById('rejected-count').innerText = jobs.filter(j => j.status 
 
         wrapper.innerHTML = filtered.map(job => {
             let tagTxt = "NOT APPLIED";
+
             let tagClass = "";
             
         
     if(job.status === 'interview') { 
         tagTxt = "INTERVIEWED"; 
                  tagClass = "applied"; 
-            }
+         }
 
             if(job.status === 'rejected') { 
 
-                tagTxt = "REJECTED"; 
+                 tagTxt = "REJECTED"; 
                 tagClass ="rejected"; 
             }
+            // ============================================================================================
+
 
 return `
 <div class="job-item">
@@ -152,7 +157,7 @@ return `
            <span class="del-icon" onclick="deleteJob(${job.id})">🗑</span>
     </div>
                     <div class="status-tag ${tagClass}">${tagTxt}</div>
-                    <p class="job-desc">${job.desc}</p>
+                     <p class="job-desc">${job.desc}</p>
                     <div class="action-ctn">
          <button class="btn-action btn-int" onclick="updateStatus(${job.id}, 'interview')">INTERVIEW</button>
         <button class="btn-action btn-rej" onclick="updateStatus(${job.id}, 'rejected')">REJECTED</button>
@@ -164,6 +169,7 @@ return `
     }
 }
 
+// ============================================================================================
 
 
 function updateStatus(id, stat) {
@@ -194,6 +200,6 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     });
 
 });
-
+// ============================================================================================
 
 renderUI();
