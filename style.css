@@ -205,9 +205,27 @@ color: #1A0B2E;
     background: white;
 }
 
-.btn-int { border: 1px solid var(--success-green); color: var(--success-green); }
-.btn-rej { border: 1px solid var(--danger-red); color: var(--danger-red); }
-.del-icon { cursor: pointer; opacity: 0.5; }
+.btn-int { 
+border: 1px solid var(--success-green); 
+/* background-color: 1px solid yellow; */
+    color: var(--success-green); 
+}
+
+
+
+.btn-rej { 
+    /* background-color: 1px solid yellow; */
+    border: 1px solid var(--danger-red); 
+    color: var(--danger-red); 
+
+}
+
+
+
+.del-icon { 
+    cursor: pointer;
+      opacity: 0.5;
+ }
 
 /* ================= EMPTY STATE SECTION ================= */
 
